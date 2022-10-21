@@ -1,0 +1,16 @@
+
+{                                                                   
+            "name": "be.eloistree.memoryfilecommunicationdllinunityEditor",          
+    "references": ["be.eloistree.memoryfilecommunicationdllinunity","be.eloistree.memoryfilecommunicationforunity"
+],                                                              
+    "optionalUnityReferences": [],                                  
+    "includePlatforms": [                                           
+        "Editor"                                                    
+    ],                                                              
+    "excludePlatforms": [],                                         
+    "allowUnsafeCode": false,                                       
+    "overrideReferences": false,                                    
+    "precompiledReferences": [],                                    
+    "autoReferenced": true,                                         
+    "defineConstraints": []                                         
+}                                                                   

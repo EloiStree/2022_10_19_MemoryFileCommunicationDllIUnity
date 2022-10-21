@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.memoryfilecommunicationdllinunity",                              
+  "displayName": "Memory File Communication Dll In Unity",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "This tool allows to communicate through Memory-mapped file. ",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2022_10_19_MemoryFileCommunicationDllIUnity.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
