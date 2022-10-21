@@ -7,7 +7,7 @@ using System;
 
 public class Demo_FileConnectionWithMutex : MonoBehaviour
 {
-    public string m_fileName = "NoMutexTest";
+    public TargetMemoryFileInitation m_fileInfo = new TargetMemoryFileInitation() { m_fileName = "MutexTest", m_maxMemorySize = 1000000 };
     public UnityStringEvent m_received;
     [System.Serializable]
     public class UnityStringEvent : UnityEvent<string> { }
@@ -16,9 +16,10 @@ public class Demo_FileConnectionWithMutex : MonoBehaviour
         InvokeRepeating("Test", 0, 1.5f);
     }
     public void Test() {
-        MemoryFileConnectionWithMutex connectionRecovert = new MemoryFileConnectionWithMutex(m_fileName, 1000000);
-        connectionRecovert.SetText(DateTime.Now.ToString());
-        connectionRecovert.GetAsText(out string t);
+       MemoryFileConnectionFacade.CreateConnection(MemoryFileConnectionType.WithMutex, 
+            m_fileInfo, out IMemoryFileConnectionSetGet connectionRecovert);
+        connectionRecovert.SetAsText(DateTime.Now.ToString());
+        connectionRecovert.GetAsText(out string t, false);
         m_received.Invoke(t);
     }
 }
