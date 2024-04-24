@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MFC_Demo_PushByteRenderTextureMono : MonoBehaviour
 {
 
     public RenderTexture m_renderTexutre;
-    public Eloi.PrimitiveUnityEvent_BytesArray m_bytesArrayEvent;
+    public UnityEvent<byte[]> m_bytesArrayEvent;
 
     public int m_width = 256, m_heigt = 256;
     public Texture2D m_pushed;

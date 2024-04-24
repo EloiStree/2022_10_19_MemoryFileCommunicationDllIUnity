@@ -13,6 +13,6 @@ public class MFC_PushLargeBytesWithDateUpdate : MonoBehaviour
     public void PushBytes( byte[] bytesToPush) {
 
         m_whereToPushBytes.SetAsBytes(bytesToPush);
-        m_whereToPushDate.SetAsText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture));
+        m_whereToPushDate.SetAsText(DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture));
     }
 }
